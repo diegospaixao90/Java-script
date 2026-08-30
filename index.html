@@ -20,17 +20,23 @@
         <label>
             Converte <b>De:</b>
             <select>
-                <option>R$: Real Brasileiro</option>
-                <option>US$: Dólar Americano</option>
-                <option>€: Euro</option>
+                <option value="real">R$: Real Brasileiro</option>
+                <option value="dolar">US$: Dólar Americano</option>
+                <option value="euro">€: Euro</option>
+                <option value="yuan">¥: Yuan Chinês</option>
+                <option value="bitcoin">₿: Bitcoin</option>
             </select>
 
             <label>
                 Converte <b>Para:</b>
-                <select>
-                    <option>US$: Dólar Americano</option>
-                    <option>€: Euro</option>
-                    <option>R$: Real Brasileiro</option>
+                <select class="currency-select">
+
+                    <option value="dolar">US$: Dólar Americano</option>
+                    <option value="euro">€: Euro</option>
+                    <option value="yuan">¥: Yuan Chinês</option>
+                    <option value="bitcoin">₿: Bitcoin</option>
+                    <option value="real">R$: Real Brasileiro</option>
+                
                 </select>
             </label>
 
