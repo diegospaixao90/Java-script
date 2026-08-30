@@ -53,12 +53,41 @@ function convertValues() {
             currency: "BRL"
         }).format(inputCurrencyValue);
     }
-
-
 }
 
+    function changeCurrency(){
 
-    
+   const currencyNeme = document.getElementById("nova-moeda")
+   const currencyImage = document.querySelector(".logo-img")
+
+if (currencySelect.value == "dolar"){
+    currencyNeme.innerHTML = "Dólar americano"
+    currencyImage.src = "acetes/assets/dola.png"
+}
+
+if (currencySelect.value == "euro"){
+    currencyNeme.innerHTML = "Euro"
+    currencyImage.src = "acetes/assets/euro.png"
+}
+
+if (currencySelect.value == "yuan"){
+    currencyNeme.innerHTML = "Yuan Chinês"
+    currencyImage.src = "acetes/assets/Yuan Chinês.png"
+}
+
+if (currencySelect.value == "bitcoin"){
+    currencyNeme.innerHTML = "Bitcoin"
+    currencyImage.src = "acetes/assets/bitcoin 1.png"
+}
+
+if (currencySelect.value == "real"){
+    currencyNeme.innerHTML = "Real"
+    currencyImage.src = "acetes/assets/real.png"
+}
+    }
+
+
+    currencySelect.addEventListener("change", changeCurrency)
     convertButton.addEventListener("click", convertValues)
 
 
