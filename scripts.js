@@ -54,13 +54,21 @@ function convertValues() {
         }).format(inputCurrencyValue / bitcoinToday);
     }
 
-    if (currencySelect.value == "real") {
+     if (currencySelect.value == "real") {
+        currencyValueConverted.innerHTML = new Intl.NumberFormat("pt-br", {
+            style: "currency",
+            currency: "BRL"
+        }).format(inputCurrencyValue / bitcoinToday);
+    }
+
         currencyValueToconvert.innerHTML = new Intl.NumberFormat("pt-BR", {
             style: "currency",
             currency: "BRL"
         }).format(inputCurrencyValue);
     }
-}
+
+   
+
 
 function changeCurrency() {
 
